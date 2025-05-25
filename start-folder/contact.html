@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>問い合わせ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>問い合わせホーム</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="test2/index.html">ホーム</a></li>
+                <li><a href="contact.html">問い合わせ</a></li>
+                <li><a href="work.html">課題</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>お問い合わせはこちら</h2>
+            <form action="submit.php" method="POST">
+                <label for="name">名前;</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="emaill">メールアドレス;</label>
+                <input type="emaill" id="emaill" name="emaill" required>
+
+                <label for="message">メッセージ;</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">送信</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 サンプルサイト</p>
+    </footer>
+</body>
+</html>
