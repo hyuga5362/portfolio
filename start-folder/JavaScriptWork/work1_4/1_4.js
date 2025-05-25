@@ -2,7 +2,6 @@ let wantApple = 4;
 
 let stockApple = 3;
 
-
 if ( stockApple>=wantApple ) {
 
   console.log("希望通りカートに入れます。");
@@ -14,10 +13,9 @@ if ( stockApple>=wantApple ) {
 }
 
 
-
 let i = 0;
 
-while (i < 3 ) {
+while (i < stockApple ) {
 
   console.log("りんごをカートに追加しました");
 
@@ -26,9 +24,8 @@ while (i < 3 ) {
 }
 
 
-
-for (let j = 1; j <= 3; j++) {
+for (let j = 1; j <= stockApple; j++) {
 
   console.log(`リンゴを買うのは${j}回目の処理です`);
-
+  
 }
