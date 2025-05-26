@@ -1,4 +1,4 @@
-console.log("お客さんがコーヒーとサンドイッチを注文しました");
+console.log("👦お客さんがコーヒーとサンドイッチを注文しました");
 
 
 function makeCoffee() {

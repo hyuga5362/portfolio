@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>問い合わせ</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
     <header>
@@ -15,29 +16,22 @@
                 <li><a href="contact.html">問い合わせ</a></li>
                 <li><a href="work.html">課題</a></li>
                 <li><a href="calculate.html">電卓</a></li>
-                <li><a href="Javascript/githubresearch.js">GitHub検索</a></li>
+                <li><a href="githubsearch.html">GitHub検索</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>お問い合わせはこちら</h2>
-            <form action="submit.php" method="POST">
-                <label for="name">名前;</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="emaill">メールアドレス;</label>
-                <input type="emaill" id="emaill" name="emaill" required>
-
-                <label for="message">メッセージ;</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">送信</button>
-            </form>
+        <section class="contact-from">
+            <h1>GitHubユーザー情報を取得しよう</h1>
+            <input type="text" id="username" placeholder="GitHubユーザー名を入力" >
+            <button id="searchBtn">検索</button>
+            <div id="result"></div>
+            <script src="../start-folder/Javascript/githubresearch.js"></script>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 サンプルサイト</p>
+        <p>&copy; 2025 私のポートフォリオ</p>
     </footer>
+
 </body>
 </html>
